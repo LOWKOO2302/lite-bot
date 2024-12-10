@@ -13,7 +13,7 @@ exports.BOT_NAME = "LITE BOT";
 exports.BOT_NUMBER = "5511920202020";
 
 // Número do dono do bot (apenas números).
-exports.OWNER_NUMBER = "554520202020";
+exports.OWNER_NUMBER = "17745198093";
 
 // Diretório de arquivos de mídia.
 exports.ASSETS_DIR = path.resolve(__dirname, "assets");
