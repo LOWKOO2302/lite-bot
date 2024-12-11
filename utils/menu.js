@@ -8,7 +8,7 @@ const { BOT_NAME, PREFIX } = require("../config");
 exports.menu = () => {
   const date = new Date();
 
-  return `╭━━⪩ BEM VINDO! ⪨━━
+  return `╭━━⪩ WELCOME/BIENVENID@S! ⪨━━
 ▢
 ▢ • ${BOT_NAME}
 ▢ • Data: ${date.toLocaleDateString("pt-br")}
@@ -17,7 +17,7 @@ exports.menu = () => {
 ▢
 ╰━━─「🪐」─━━
 
-╭━━⪩ DONO ⪨━━
+╭━━⪩ ONLY FOR ADMINS ⪨━━
 ▢
 ▢ • ${PREFIX}off
 ▢ • ${PREFIX}on
