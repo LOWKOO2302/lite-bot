@@ -185,7 +185,7 @@ async function runLite({ socket, data }) {
       case "antilink":
         if (!args.length) {
           throw new InvalidParameterError(
-            "Você precisa digitar 1 ou 0 (ligar ou desligar)!"
+            "You need to enter 1 or 0 (turn on or off)!"
           );
         }
 
@@ -194,7 +194,7 @@ async function runLite({ socket, data }) {
 
         if (!antiLinkOn && !antiLinkOff) {
           throw new InvalidParameterError(
-            "Você precisa digitar 1 ou 0 (ligar ou desligar)!"
+            "You need to enter 1 or 0 (turn on or off)!"
           );
         }
 
@@ -208,8 +208,10 @@ async function runLite({ socket, data }) {
 
         const antiLinkContext = antiLinkOn ? "ativado" : "desativado";
 
-        await reply(`Recurso de anti-link ${antiLinkContext} com sucesso!`);
+        await reply(`Antilink Active ${antiLinkContext} feature success!`);
         break;
+
+        
       case "attp":
         if (!args.length) {
           throw new InvalidParameterError(
@@ -226,7 +228,7 @@ async function runLite({ socket, data }) {
         await stickerFromURL(url);
         break;
       case "ban":
-      case "banir":
+      case "baniar":
       case "kick":
         if (!(await isAdmin(userJid))) {
           throw new DangerError(
@@ -337,7 +339,7 @@ async function runLite({ socket, data }) {
 
         deactivateGroup(from);
 
-        await successReply("Bot desativado no grupo!");
+        await successReply("Bot desativata in the group!");
         break;
       case "image":
         if (!fullArgs.length) {
